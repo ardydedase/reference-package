@@ -15,19 +15,19 @@ jobs:
       uses: actions/setup-node@v1
 
     - name: Install npm packages
-      working-directory: $GITHUB_WORKSPACE
+      working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
         npm install
     - name: Format and lint
-      working-directory: $GITHUB_WORKSPACE
+      working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
         npm run format
         npm run lint
     - name: Run tests
-      working-directory: $GITHUB_WORKSPACE
+      working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
         npm test
     - name: Run build
-      working-directory: $GITHUB_WORKSPACE
+      working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
         npm run build        
