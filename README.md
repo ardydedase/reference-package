@@ -1,6 +1,8 @@
-# reference package
+![CI](https://github.com/ardydedase/reference-package/workflows/CI/badge.svg)
 
-My reference npm package.
+# Reference Package
+
+My reference npm package. Cookiecut from: https://github.com/ardydedase/cookiecutter-npm-package
 
 ## Specs
 
